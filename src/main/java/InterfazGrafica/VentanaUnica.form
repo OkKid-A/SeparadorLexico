@@ -16,14 +16,23 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="2ad00" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+          <scrollpane id="b5e4e">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="3" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="300" height="100"/>
               </grid>
             </constraints>
             <properties/>
-          </component>
+            <border type="none"/>
+            <children>
+              <component id="ab6d5" class="javax.swing.JTextArea" binding="textoPruebaArea">
+                <constraints/>
+                <properties>
+                  <lineWrap value="true"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
           <component id="73952" class="javax.swing.JButton" binding="verificarButton" default-binding="true">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
@@ -41,7 +50,23 @@
         </constraints>
         <properties/>
         <border type="none"/>
-        <children/>
+        <children>
+          <scrollpane id="ce49d" binding="resultadosScroll">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="300" height="100"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="420d5" class="javax.swing.JTable" binding="resultadosTable">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
       </grid>
     </children>
   </grid>
